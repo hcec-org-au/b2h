@@ -1,0 +1,12 @@
+active,uuid,displayOrder,layerGroup,label,type,visible,transparent,showLayers,url
+1,lga,1020,Admin,LGA,wms,1,1,5,http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WmsServer
+0,base_topo,10,BASE,Topographic,wms,1,1,0,http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Topo_Map/MapServer/WmsServer
+
+0,0,1,lga,Admin,LGA,wms,http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WmsServer,1,5
+0,0,1000,lga,Admin,LGA,vectorTileLayer,https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/EDP/Administrative_Boundaries/MapServer,1,1
+0,0,1000,lga,Admin,LGA,vectorTileLayer,https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/EDP/Administrative_Boundaries/MapServer,1,5
+0,0,1000,World_Hillshade,BASE,World_Hillshade,vectorTileLayer,https://server.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer,1,5
+0,0,1000,NSW_Administrative_Boundaries_Theme,BASE,LGA,vectorTileLayer,https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme/VectorTileServer,0,8
+
+0,0,1010,suburb,Admin,Suburbs,vectorTileLayer,https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/EDP/Administrative_Boundaries/MapServer,1,0
+0,0,10,base_topo,BASE,Topographic,wms,http://maps.six.nsw.gov.au/arcgis/services/public/NSW_Topo_Map/MapServer/WmsServer,1,0

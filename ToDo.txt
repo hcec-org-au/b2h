@@ -1,0 +1,37 @@
+RIGHT HAND SIDE LAYER MENU
+
+ - add hide/show icon functionality
+    - hook up hide/show functionality
+
+ - add active/inactive magnifying glass icon functionality
+    - hook up query layer functionality
+
+
+ - add onmouseover layer hover tooltip
+
+
+HOSTING & DOMAIN NAME
+ - new github account
+ - Github Pages
+ - edit .gitignore so built files are in Git
+
+
+
+
+#############################################
+#############################################
+ycixfgelj
+
+
+// set visible
+let uuid = 'sqtgrt54r';
+mapLayers[uuid].layerObject.addTo(leafletMap);
+
+// set hidden
+let uuid = 'sqtgrt54r';
+mapLayers[uuid].layerObject.remove()
+
+
+mapLayers[Object.keys(mapLayers)[0]].layerObject.addTo(leafletMap);
+
+

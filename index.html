@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8"/>
+<title>HCEC - Barrington to Hawkesbury</title>
+<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no"/>
+
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/esri-leaflet@3.0.11/dist/esri-leaflet.js"></script>
+<script src="https://unpkg.com/esri-leaflet-vector@4.1.0/dist/esri-leaflet-vector.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js"></script>-->
+
+<link rel="stylesheet" href="dist/styles.css" />
+
+<body>
+<div id="topbar">
+  <div class="nav_title" onclick="overlay_on('ol1')">Barrington to Hawkesbury</div>
+  <div class="nav_content">
+    <ul>
+      <li><a href="#home" class="nav_content_link" onclick="overlay_on('ol1')">About B2H</a></li>
+      <li><a href="#news" class="nav_content_link" onclick="overlay_on('ol2')">Refugia Projections</a></li>
+      <li><a href="#contact" class="nav_content_link" onclick="overlay_on('ol3')">Using the map</a></li>
+      <li><a href="#about" class="nav_content_link" onclick="overlay_on('ol4')">HCEC</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="ol1" class="overlay" onclick="overlay_off(this)"><div class="ol_tmp">
+  <h1>Page 1</h1>
+</div></div>
+
+<div id="ol2" class="overlay" onclick="overlay_off(this)"><div class="ol_tmp">
+    <h1>Page 2</h1>
+</div></div>
+
+<div id="ol3" class="overlay" onclick="overlay_off(this)"><div class="ol_tmp">
+    <h1>Page 3</h1>
+</div></div>
+
+<div id="ol4" class="overlay" onclick="overlay_off(this)"><div class="ol_tmp">
+    <h1>Page 4</h1>
+</div></div>
+
+<div id="ol5" class="overlay" onclick="overlay_off(this)"><div class="ol_tmp">
+    <h1>Page 5</h1>
+</div></div>
+
+
+<div class="container">
+    <div id="map"></div>
+<!--<button id="menu-toggle-open" class="hamburger-menu open">-->
+<!--    <svg href="images/open.svg"/>-->
+<!--</button>-->
+<!--<nav id="offcanvas-menu" class="offcanvas-menu">-->
+<!--    <button id="menu-toggle-close" class="hamburger-menu close">-->
+<!--        <svg href="images/close.svg"/>-->
+
+<!--    </button>-->
+<!--    <ul>-->
+<!--        <li><a href="#home">Home</a></li>-->
+<!--        <li><a href="#about">About</a></li>-->
+<!--        <li><a href="#contact">Contact</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+
+</div>
+
+<button id="menu-toggle-open" class="hamburger-menu open">
+    <img alt="Show/Hide" class="hamburger-icon open" src="images/hamburger_icon.svg">
+</button>
+<nav id="offcanvas-menu" class="offcanvas-menu">
+<!--    <div id="menu-top-close"></div>-->
+    <button id="menu-toggle-close" class="hamburger-menu close">
+      <img alt="Show/Hide" class="hamburger-icon close" src="images/hamburger_icon.svg">
+    </button>
+    <div class="layer_content"> <b>MAP LAYERS <i class="bi bi-card-checklist"></i></b>
+      <div id="overlay_layers_div"></div>
+
+
+
+<!--      <div class="layer-1">-->
+<!--        &nbsp;<abbr title="this layer is visible - click to hide"><i class="bi bi-eye"></i></abbr>-->
+<!--          <abbr title="this layer is visible - click to hide"><i class="bi bi-search"></i></abbr>-->
+<!--          Bioregions-->
+<!--      </div>-->
+
+      <div class="layer-1"><br/></div>
+      <div class="layer-1"><b>BASE MAP LAYERS</b> <i class="bi bi-globe-asia-australia"></i></div>
+      <div id="base_layers_div"></div>
+
+    </div>
+</nav>
+
+<footer>
+    <div class="footerRow">
+        <div id="f1" class="footerColumn">C1</div>
+        <div id="f2" class="footerColumn">C2</div>
+        <div id="f3" class="footerColumn">C3</div>
+    </div>
+</footer>
+
+
+<script src="dist/scripts.js"></script>
+</body>
+</html>

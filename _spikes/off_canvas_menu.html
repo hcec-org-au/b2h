@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<meta charset="utf-8"/>
+<head>
+    <title>HCEC - Barrington to Hawkesbury</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../src/css/off_canvas_menu.css" />
+<!--    <script src="scripts/off_canvas_menu.js"></script>-->
+
+
+
+</head>
+<body>
+<div id="header-bar"></div>
+<div id="mapid"></div>
+
+<button id="menu-toggle-open" class="hamburger-menu open">
+    <img class="hamburger-icon open" src="../images/hamburger_icon.svg">
+</button>
+
+<nav id="offcanvas-menu" class="offcanvas-menu">
+    <div id="menu-top-close"></div>
+    <button id="menu-toggle-close" class="hamburger-menu close">
+        <img class="hamburger-icon close" src="../images/hamburger_icon.svg">
+    </button>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p><abbr title="HyperText Markup Language"><i class="bi bi-eye" alt="Show/Hide"></i></abbr</p>
+    <p><i class="bi bi-eye-slash"></i></p>
+    <p><i class="bi bi-eye-fill"></i></p>
+    <p><i class="bi bi-eye-slash-fill"></i></p>
+    <p><i class="bi bi-bullseye"></i></p>
+
+</nav>
+<div id="footer-bar"></div>
+<script src="off_canvas_menu.js"></script>
+
+</body>
+</html>

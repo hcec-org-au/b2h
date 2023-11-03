@@ -1,0 +1,135 @@
+/* ##########################################################*/
+/*Icons & Tool tip*/
+.bi {
+    font-size: 1rem;
+    color: #000;
+    vert-align: bottom;
+    padding-right: 1px;
+}
+
+/*.container {*/
+/*    background-color: #000;*/
+/*    line-height: 1;*/
+/*    margin: 1rem;*/
+/*    padding: 2px;*/
+/*}*/
+
+abbr {
+    font-style: italic;
+    font-size: 0.7rem;
+    position: relative
+}
+
+abbr:hover::after {
+    background: #ffa556;
+    border-radius: 4px;
+    bottom: 100%;
+    content: attr(title);
+    display: block;
+    left: 100%;
+    padding: 0.5em;
+    position: absolute;
+    width: 160px;
+    height:10px;
+    z-index: 1;
+}
+
+/* ##########################################################*/
+
+.hamburger-menu {
+    position: absolute;
+    /*top: 66px;*/
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 10000; /* Higher than map's and header-bar's z-index */
+    /*height: calc(100% - 18px);*/
+}
+
+.hamburger-menu.close {
+    left: calc(100% - 220px);
+    right: unset;
+    display: none; /* Initial state */
+    z-index: 10000;
+}
+
+.hamburger-menu.close img {
+    transform: rotate(180deg);
+}
+
+.hamburger-menu.open {
+    position: absolute;
+    right: 0;
+    top: 66px;
+    z-index: 10000;
+    display: block; /* Initial state */
+}
+
+.layer_content{
+    padding-top:35px;
+    font-size: 0.9rem;
+}
+
+.layer_content p{
+  padding:0;
+  vert-align: bottom;
+}
+
+.layer-1 {
+  line-height: 140%;
+}
+
+.layer-1 i{
+  top: 2px;
+}
+
+
+.offcanvas-menu {
+    position: fixed;
+    right: -220px;
+    top: 66px;
+    bottom: 41px; /* Height of the footer bar (15px + 3px padding) */
+    width: 220px;
+    transition: all 0.3s;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 9999; /* Higher than map's and header-bar's z-index, lower than hamburger-menu's z-index */
+    background: #d0d0d0;
+}
+
+/*.offcanvas-menu:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 66px;*/
+/*    right: 0;*/
+/*    width: 100%;*/
+/*    height: 35px;*/
+/*    background-color: #333;*/
+/*}*/
+
+
+#menu-top-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #333;
+}
+
+.offcanvas-menu ul {
+    padding: 10px;
+    padding-top: 25px;
+    list-style: none;
+}
+
+.offcanvas-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.offcanvas-menu.show {
+    right: 0;
+}
+

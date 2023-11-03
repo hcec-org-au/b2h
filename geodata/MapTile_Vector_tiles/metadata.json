@@ -1,0 +1,14 @@
+{
+  "name": "MapTile_Vector_tiles",
+  "version": "1.1.0",
+  "description": "",
+  "attribution": "<a href=\"https://www.maptiler.com/engine/\">Rendered with MapTiler Engine</a>, non-commercial use only",
+  "type": "baselayer",
+  "format": "pbf",
+  "minzoom": "4",
+  "maxzoom": "9",
+  "scale": "1.000000",
+  "bounds": [151.18670200, -33.57515739, 153.63883084, -28.15383245],
+  "profile": "mercator",
+  "vector_layers": [{"id":"ClimateChangeCorridors_Coastal_NE_NSW","description":"","minzoom":4, "maxzoom":9,"fields":{"REC_NO":"Number","CORR_NAME":"String","C_FEATURE":"String","REF_SPEC_1":"String","REF_SPEC_2":"String","KEYHAB_HA":"Number","KEYHAB_PC":"Number","VEG_HA":"Number","VEG_PC":"Number","HCV":"String","AREA_HA":"Number","CORRIDOR":"String","Shape_Leng":"Number","Shape_Area":"Number"}}]
+}

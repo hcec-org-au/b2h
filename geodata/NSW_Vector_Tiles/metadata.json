@@ -1,0 +1,14 @@
+{
+  "name": "NSW_Vector_Tiles",
+  "version": "1.1.0",
+  "description": "",
+  "attribution": "<a href=\"https://www.maptiler.com/engine/\">Rendered with MapTiler Engine</a>, non-commercial use only",
+  "type": "baselayer",
+  "format": "pbf",
+  "minzoom": "2",
+  "maxzoom": "9",
+  "scale": "1.000000",
+  "bounds": [140.99928648, -37.50526744, 159.10544890, -28.15700748],
+  "profile": "mercator",
+  "vector_layers": [{"id":"NSW_STATE_POLYGON_shp_GDA2020","description":"","minzoom":2, "maxzoom":9,"fields":{"ST_PLY_PID":"String","DT_CREATE":"String","DT_RETIRE":"String","STATE_PID":"String","STATE_NAME":"String","ST_ABBREV":"String"}}]
+}

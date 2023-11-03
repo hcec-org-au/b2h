@@ -1,0 +1,40 @@
+{
+  "23rbjilzg": {
+    "uuid": "23rbjilzg",
+    "layerConfig": {
+      "type": "layer",
+      "visible": 1,
+      "active": 0,
+      "displayOrder": 100,
+      "transparent": 0,
+      "showLayers": "0",
+      "layerGroup": "BASE",
+      "label": "Hybrid",
+      "layerType": "esriVectorTile",
+      "url": "https://portal.spatial.nsw.gov.au/vectortileservices/rest/services/Hosted/NSW_BaseMap_VectorTile_Hybrid/VectorTileServer",
+      "uuid": "23rbjilzg"
+    },
+    "visible": 1,
+    "active": 0
+  },
+  "spygojaiy": {
+    "uuid": "spygojaiy",
+    "layerConfig": {
+      "type": "layer",
+      "visible": 1,
+      "active": 0,
+      "displayOrder": 306,
+      "transparent": 0,
+      "showLayers": [
+        0
+      ],
+      "layerGroup": "Admin",
+      "label": "Suburb",
+      "layerType": "esriMapServer",
+      "url": "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/EDP/Administrative_Boundaries/MapServer",
+      "uuid": "spygojaiy"
+    },
+    "visible": 1,
+    "active": 0
+  }
+}

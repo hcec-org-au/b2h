@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title> </title><style type="text/css">@page { margin-left:0.60in; margin-right:0.60in; margin-top:0.79in; margin-bottom:0.79in } @media print { br.altova-page-break { page-break-before: always; } }</style></head><body><br><h1>Fauna Corridors for North East NSW</h1><br><h2><span>Dataset Description Contents</span></h2><table border="1" width="100%"><tbody><tr><td><a href="#General Properties"><span>General Properties</span></a></td><td><a href="#Theme &amp; Keywords"><span>Data Theme</span></a></td></tr><tr><td><a href="#Resource Dataset Details"><span>Resource Dataset Details</span></a></td><td><a href="#RS"><span>Reference System Information</span></a></td></tr><tr><td><a href="#Keydates &amp; Keywords"><span>Key Dates</span></a></td><td><a href="#S-domain"><span>Spatial Domain</span></a></td></tr><tr><td><a href="#DQ"><span>Data Quality</span></a></td><td><a href="#Time"><span>Temporal Extent of the Data</span></a></td></tr><tr><td><a href="#Status &amp; Maintenance"><span>Data Status and Maintenance</span></a></td><td><a href="#Distr"><span>Distribution Information</span></a></td></tr><tr><td><a href="#Resolution"><span>Spatial Resolution</span></a></td><td><a href="#contact"><span>Metadata Contact Information</span></a></td></tr><tr><td><a href="#Browse Graphic"><span>Browse Graphic</span></a></td><td><a href="#Met-Ref"><span>Metadata Reference Information</span></a></td></tr></tbody></table><span>Note: this dataset decsription is metadata (data about data) which describes the actual dataset in accordance with the </span><a href="http://www.anzlic.org.au/metadata/profile/ANZLIC%20Metadata%20Profile%20v1.1.pdf"><span>ANZLIC Metadata Profile</span></a><span>: An Australian/New Zealand Profile of AS/NZS ISO 19115:2005, Geographic information - Metadata.</span><br><br><hr><h2><a name="General Properties"><span>General Properties</span></a></h2><span style="font-weight:bold; ">Title:</span><span>&nbsp;&nbsp; </span>Fauna Corridors for North East NSW<br><br><span style="font-weight:bold; ">Alternative title:</span><span>&nbsp;&nbsp; </span>Upper North East and Lower North East Fauna Corridors<span>&nbsp;</span><br><br><span style="font-weight:bold; ">Metadata file identifier:</span><span>&nbsp;&nbsp; </span>{EC16E017-645C-4A1E-AD4F-7C5E2B97FE76}<br><br><span style="font-weight:bold; ">ANZLIC file identifier:</span><br><br><span style="font-weight:bold; ">Parent identifier:</span><br><br><span style="font-weight:bold; ">Scope of resource described by metadata:</span><span>&nbsp;&nbsp; </span><span></span>dataset<br><br><hr><h2><a name="Resource Dataset Details"><span>Resource Dataset Details</span></a></h2><span style="font-weight:bold; ">Abstract:</span><span>&nbsp;&nbsp; </span>Layer of regional and subregional linking corridors for fauna of the Upper North East (UNE) and Lower North East (LNE) NSW RFA regions. A new GIS program, NPWS CORRIDORS, was used to derive potential landscape linkages (habitat corridors) based on the predicted distributions of priority fauna species assemblages (see metadata for fauna key habitats). These ESRI grid outputs were refined, under a series of decision rules, to derive final corridor ESRI shapefile polygons. The final corridors map layer is a regional representation displaying the most likely occurrence of linking corridors for fauna consolidated at the regional scale. The mapping and derivation has been based on state-of-the-art data and GIS tools combined with qualitative interpretation based on ecological principles and expertise. As of April 2001, the mapping has not been formally field tested and the methods have not been peer-reviewed outside several conference and workshop presentations, all well received. A journal paper and project report are in preparation.<br><br><span style="font-weight:bold; ">Purpose:</span><span>&nbsp;&nbsp; </span><br><br><span style="font-weight:bold; ">Jurisdiction:</span><span>&nbsp;&nbsp; </span>NSW<span>, </span><span>&nbsp;&nbsp; </span>Australia<br><br><span style="font-weight:bold; ">Custodian organisation:</span><span>&nbsp;&nbsp; </span>NSW Department of Environment,Climate Change and Water (DECCW)<br><br><hr><br><h2><a name="Keydates &amp; Keywords"><span>Key Dates</span></a></h2><span>&nbsp;&nbsp; </span>2001-01-01creation<span>&nbsp;&nbsp; </span><span>&nbsp;&nbsp; </span>2010-07-23publication<span>&nbsp;&nbsp; </span><span>&nbsp;&nbsp; </span>2011-08-04revision<span>&nbsp;&nbsp; </span><br><br><span style="font-weight:bold; ">Metadata statement update date:</span><span>&nbsp;&nbsp; </span>2010-09-10<br><br><br><hr><br><h2><a name="DQ"><span>Data Quality</span></a></h2><span style="font-weight:bold; ">Lineage:</span><span>&nbsp;&nbsp; </span>Lineage
+
+The process employed in deriving fauna corridors is explicit and repeatable in as much as:
+
+* The fauna species models, which are the basic biodiversity entities that the project seeks to summarise and integrate are stored and held by NPWS;
+
+* All relevant data layers, developed at each stage of the project, are stored and held by NPWS;
+
+* The Geographic Information System (GIS) tools developed for the analyses are available as extensions to the ARCVIEW GIS. 
+
+At numerous stages of the analyses, informed interpretation of outputs and assignment of thresholds has been required to move the process along or to finalise an output.  Any qualitative decisions taken have been based on the project manager's ecological expertise and knowledge of the data sets being considered. 
+
+Habitat corridors have been mapped across public and private lands. 
+
+The process of deriving and mapping regional corridors for fauna has involved the use of fauna assemblage distributions and fauna key habitats (see additional metadata referenced below), as surrogates for areas of high fauna conservation, and as the actual habitats to be linked.  This involved a 4 step process which is detailed below:
+
+STEP 1. UNDERTAKE LEAST COST PATHWAYS ANALYSES TO DERIVE POTENTIAL REGIONAL AND SUB-REGIONAL CORRIDORS 
+
+A technique has been developed and refined by the Research and Development Unit of the NPWS GIS Division to aid with the delineation of habitat corridors; NPWS CORRIDORS is used as an extension to the ARCVIEW GIS program.
+
+CORRIDORS is used to identify the pathways that most efficiently link identified significant landscape elements or habitats. The program operates under the principle that species, and their constituent genes, are most likely to move (while foraging, dispersing, breeding, migrating) along gradients of preferred habitat; non-preferred habitats representing varying levels of impedance or even barriers.
+
+For any particular biodiversity entity, in this case species assemblages, the most efficient landscape links are those that exact the "least cost", in terms of energy expenditure, for their use. More favourable habitats, be it for foraging, roosting, nesting or as transitory movements, are assumed to exact less cost for their use than less favourable marginal or non-habitats. Non-habitats may include areas of native vegetation that are simply not suitable for use by the species assemblage concerned. They also include areas that have been cleared of native vegetation and developed for human uses such as agriculture and urban expansion. 
+
+The basic requirement of the CORRIDORS program is a "cost grid". This is a continuous probability surface covering the entire study area and describing the relative costs, to a particular biodiversity entity (e.g. a species or species assemblage), of utilizing each grid cell within the area as habitat, or as a potential linking pathway. Cost grids were derived for the KHC Project through a combination of the assemblage habitat map layer and existing maps of extant vegetation and land tenure. The derived cost grids reflect levels of habitat suitability and tenure class for every grid cell available as a potential linking pathway.  Predicted habitats for the assemblage are deemed the least costly pathways, the best predicted habitat class (class 3) carrying the least cost. Extant vegetation that is not predicted habitat represents a less costly path than cleared land.  Within each habitat suitability class, tenure is weighted to place greater cost on private lands as opposed to public lands and, within public lands, a greater cost on state forests as opposed to NPWS estate and Crown Reserves managed by NPWS.  The effect of tenure weightings is to favour reserved lands over state forests over private lands as corridor links, all else being equal.  Additional costs were applied to mapped estuaries making it more "costly", but not impossible, for the program to link across these features, relative to alternative links, all else being equal.
+
+The CORRIDORS program utilizes paired reference points, assigned in an iterative manner and apportioned within focal habitat types (e.g. assemblage habitats and key habitats), which it works to via the most efficient pathways available according to the cost grid. The reference points are directed into identified strategic areas, making them focal areas for landscape links. For the purposes of the KHC Project analyses 10,000 reference points were used and assigned to the predicted assemblage habitats with a minimum proportion directed into fauna core habitats. 
+
+In seeking to establish the most ecologically valid corridor network for the KHC Project study areas the LCP analyses were undertaken at two levels:
+
+Level 1: a CORRIDORS analysis for each of the each identified fauna assemblage independently (7 for UNC, 7 for LNC, 6 for TAB and 5 for SYD);
+
+Level 2: a CORRIDORS analysis for the combined assemblages within each study area. 
+
+These two levels were selected in order to pursue the goal of enhancing overall landscape connectivity. The first level will establish potential corridor links for species within each assemblage, a clear goal of landscape ecology. The second level will consolidate the landscape approach, whereby the mosaics of habitats and species assemblages across a landscape are treated as one functional system, another ecological requirement enhancing overall landscape connectivity. These between assemblage corridors are also intended to provide for larger scale dispersal and movement (e.g. migration) between predicted assemblage habitats.
+
+The CORRIDORS outputs are continuous probability surface models (map layers) depicting the pathways of least cost linking habitats, and particularly core habitats, of each fauna assemblage individually, plus a combined assemblages run for each KHC study area.  These map layers can be used as planning entities in their own right or, as in this project, can be combined and weighted to derive regional and sub-regional corridors. 
+
+STEP 2. DERIVING REGIONAL AND SUB-REGIONAL CORRIDOR GRIDS FROM "CORRIDORS" PROGRAM OUTPUTS
+
+The CORRIDORS outputs represent potential corridors; assessing them and moving them from potential corridors to Regional and Sub-regional corridors followed another set process for each KHC study area:
+
+A. Reclassify the continuous probability surface layers depicting the potential corridors for each assemblage to five classes; 0,1,2,3,4, based on perceived thresholds of significance, with class 4 being those potential corridors at the highest probability end of the scale, and of the highest priority for that assemblage;
+
+B. Do the same for the between assemblage potential corridors for each KHC study area;
+
+C. For each KHC study area, combine the classified assemblage, and between assemblage corridor grids and sum the combined classes;
+
+D. Apply thresholds to delineate Regional and Sub-regional corridors;
+
+E. For interim display purposes (prior to final conversion of the grid map layers to polygon map layers) use existing vegetation mapping to intersect the derived corridors map layers and display vegetated and non-vegetated portions of the regional and sub-regional corridors.
+
+Regional and sub-regional corridors extend across all tenures with certain private lands being crucial links in the network.  In many instances, the least costly pathway to link some assemblage habitats crossed cleared lands. 
+
+The potential regional and sub-regional corridor grid map layers depicting potential corridors linking predicted fauna assemblage habitats are available for each KHC study area and as a combined potential corridors map layer for the entire KHC area. These map layers can be used as planning entities in their own right but the final stage of the KHC Project (mapping phase) was to undertake final assessment and refinement of the potential regional and sub-regional corridors and to convert them to final polygon layers for implementation on planning and management programs. 
+
+STEP 3. REFINING THE POTENTIAL CORRIDOR GRID MAP LAYERS TO FINAL CORRIDOR POLYGON LAYERS
+
+The potential corridor map layers are useful as planning entities in their own right, providing an index of the importance of the respective corridors identified within the parameters of the analytical programs employed. However, not all of the potential corridors identified by the CORRIDORS process are sensible, from either ecological or practical planning perspectives. Second, the potential corridor grid layers are not easily adaptable to direct field implementation seeking to place the corridors on the ground and determine boundaries. Third, further interpretation is required to tailor the corridors to the fauna assemblages for which they have been derived (Bennett 1999). 
+
+A process of assessment and refinement of the potential corridors is the final stage of the KHC Project (mapping phase) whereby the potential corridor grid map layers are converted to final polygons with defined boundaries. In this process certain potential corridors are accentuated and extraneous potential corridors are ignored. An approach incorporating "focal species" (after Lambeck  1997) was used to tailor the final dimensions of corridors. It is anticipated that this polygon output will be the most appropriate for provision to planners, managers and community groups.
+
+A technique has been developed and refined by the Research and Development Unit of the NPWS GIS Division as a means of refining grid data layers, such as the potential corridors data, to clearer polygon planning units; POLYEDIT is used as an extension to the ARCVIEW GIS program.
+
+POLYEDIT
+
+POLYEDIT allows the user to select portions of continuous or classified grid map layers for refinement and categorisation. For example, a portion of the potential corridor grid layer can be selected which corresponds to a particular, locally identifiable, part of the landscape. By refining and naming the selected corridor portion the refined corridor can take on a "life of its own" and be recognisable by local planners, managers and community groups. The program allows the progressive and cumulative refinement of the entire grid layer in this manner. After selecting the portion of the grid layer to be refined POLYEDIT requires the user to apply a threshold to the grid, parts of the grid below the threshold will be retained within the derived polygon, the excess will be ignored. The polygon can then be edited to reflect aspects such as pre-determined corridor widths, tenure boundaries and local topography, as indicated by 1:25,000 topographic map layers. By combining the functions provided in the POLYEDIT program, coupled with the shape editing capabilities of ARCVIEW, virtually any configuration of shapes can be readily derived to refine the polygon outputs in line with the mapped features available to the user.
+
+An additional feature of the POLYEDIT program allows the user to identify known corridors that the CORRIDORS analyses have not delineated (non-LCP corridors). This POLYEDIT feature requires the user to outline the non-system corridor, by on-screen digitising.  
+
+For the KHC Project, POLYEDIT was incorporated into the process of assessment and refinement of potential corridors in the following manner:
+
+A. Visual assessment of the potential corridor layers, within Arcview, against available vegetation mapping, LANDSAT imagery, 1:25,000 topographic maps and tenure maps;
+
+B. Acceptance or rejection of the potential corridors, and identification of any non-system corridors based on decision rules; 
+
+C. Refinement of accepted corridor boundaries, utilising POLYEDIT in combination with vegetation mapping, LANDSAT imagery and topographic maps;
+
+D. Delineation of public land and private land corridors separately;
+
+E. Implementation of available information on focal species' home ranges, movement and dispersal abilities in modifying and finalising final corridor widths;
+
+F. Editing of the polygon attributes table, within ARCVIEW, to summarise decisions made in the refinement process; this included a scoring procedure to assess the overall status of each corridor according to six criteria;
+
+G. Final designation of corridors to the categories, Regional or Sub-regional according to the overall score thresholds.
+
+STEP 4. CONSOLIDATE THE FINAL CORRIDORS MAP LAYER
+
+The final corridors shapefile includes an attributes table that includes the following fields:
+
+Name- each individual corridor polygon has been derived independently. Those within NPWS or NSW SF estate are designated the name of the reserve or state forest within which they have been mapped. Those on private lands and crown lands other than NPWS, SF are designated a name indicative of the geographic location in which they occur.
+
+Class- the default display field- Regional Corridors are deemed the most important links, typically linking reserves to other reserves, public lands or significant key habitat patches; they often follow natural gradients. Subregional Corridors are also important links but may be alternative or secondary links, more fragmented links, may link regional corridors to other corridors or public lands; they often cross natural gradients.
+
+Origin- 1.- Corridors mapped directly from CORRIDORS system analysis; 2. Corridors based on CORRIDORS system analysis but boundaries or pathway modified in accordance with refinement mapping; 3.- Corridors mapped from other sources (eg. Coastal Corridor, mapped Koala Plan corridors; Roads and Traffic Authority Pacific Highway underpass corridors.
+
+Notes- For private lands-based corridors only. This field highlights the fauna assemblage(s) for which the corridor has been mapped. A between assemblages note indicates that the corridor was identified and mapped from the "between assemblages" CORRIDORS analysis.
+
+Focal Species- For private lands-based corridors only. A broad indication of the focal species for which the overall corridor dimensions were designed- a reflection of the focal species' potential spatial requirements. The focal species reflect the assemblage for which the corridor was mapped.
+
+ Corridor Score- For private lands-based corridors only. Potential corridors were scored for their conservation value and class designation. The higher the score the higher the perceived corridor conservation value. Corridor scores from 7-10 yielded a "Sub-regional" class rank; scores of 11-18 yielded a "regional" class rank.
+
+RTA-Koala- "RTA underpass corridors" coincide with ameliorative fauna underpasses or culverts installed during upgrading works for the Pacific Highway (up until the March 2001). "Koala Corridors" were mapped for Koala Management Plans and included as part of the regional network; as of March 2001 only Coffs Harbour Koala corridors were available for inclusion.
+
+
+
+Positional Accuracy
+
+Species assemblage distributions, key habitats and corridors have been derived from interpolated species distributions generated by modelling point locality species records (with a spatial accuracy of approximately 100m) in relation to mapped environmental layers (with a map scale of 1:100 000 to 1:250 000) (see additional metadata). The CORRIDORS analysis was undertaken at the 500m grid cell size in order to reduce computational burden. The outputs were re-sampled to 100m grid cell for display and storage.
+
+In applying and interpreting the key habitats map layer it should always be remembered that they are based on modelled data and have been developed at the regional scale, to inform regional land, water and vegetation reform programs. The mapped products represent a state-of-the-art consolidation of fauna information for UNE and LNE areas but should be interpreted in terms of a likelihood of occurrence of fauna key habitats; they are indicative representations (see mapping caveat). It should also be noted that the process of development of the key habitats layer has necessarily included qualitative judgements relating to interpretations and setting of thresholds; these have been made based on ecological expertise and explicit decision rules.
+
+
+
+Attribute Accuracy
+
+The species assemblage distributions, derived key habitats, and ultimately the corridors layer are a direct reflection of the species distributional models from which they are developed (see Additional Metadata).
+
+The extent to which the predicted corridors in fact support the assemblages or priority species for which they have been delineated will vary between species, assemblages and areas. 
+
+Field evaluation surveys are required to further assess the attribute accuracy. The form of the assemblage distributions lend themselves ideally to field-based evaluation and monitoring; the occurrence of relative proportions of the species comprising relevant assemblages can be used to assess the predictions.
+
+
+
+Logical Consistency
+
+The Corridors shapefile comprises many individual corridor polygons, each mutually exclusive.
+
+
+
+Completeness
+
+The derived fauna key habitat grid is restricted to the extent of native forest defined by the Forest Ecosystems map layer derived for UNE and LNE RFA studies. For the purposes of this project these layers have been further restricted to delete areas mapped as forestry plantation, agricultural plantation, pasture and cropland, introduced scrub, cleared / partially cleared, camphor laurel. These were mapped categories that were not assigned a conservation target in the RFA process.
+
+Lineage
+
+The process employed in deriving fauna corrodrs is explicit and repeatable in as much as:
+
+* The fauna species models, which are the basic biodiversity entities that the project seeks to summarise and integrate are stored and held by NPWS;
+
+* All relevant data layers, developed at each stage of the project, are stored and held by NPWS;
+
+* The Geographic Information System (GIS) tools developed for the analyses are available as extensions to the ARCVIEW GIS. 
+
+At numerous stages of the analyses, informed interpretation of outputs and assignment of thresholds has been required to move the process along or to finalise an output.  Any qualitative decisions taken have been based on the project manager's ecological expertise and knowledge of the data sets being considered. 
+
+Habitat corridors have been mapped across public and private lands. 
+
+The process of deriving and mapping regional corridors for fauna has involved the use of fauna assemblage distributions and fauna key habitats (see additional metadata referenced below), as surrogates for areas of high fauna conservation, and as the actual habitats to be linked.  This involved a 4 step process which is detailed below:
+
+STEP 1. UNDERTAKE LEAST COST PATHWAYS ANALYSES TO DERIVE POTENTIAL REGIONAL AND SUB-REGIONAL CORRIDORS 
+
+A technique has been developed and refined by the Research and Development Unit of the NPWS GIS Division to aid with the delineation of habitat corridors; NPWS CORRIDORS is used as an extension to the ARCVIEW GIS program.
+
+CORRIDORS is used to identify the pathways that most efficiently link identified significant landscape elements or habitats. The program operates under the principle that species, and their constituent genes, are most likely to move (while foraging, dispersing, breeding, migrating) along gradients of preferred habitat; non-preferred habitats representing varying levels of impedance or even barriers.
+
+For any particular biodiversity entity, in this case species assemblages, the most efficient landscape links are those that exact the "least cost", in terms of energy expenditure, for their use. More favourable habitats, be it for foraging, roosting, nesting or as transitory movements, are assumed to exact less cost for their use than less favourable marginal or non-habitats. Non-habitats may include areas of native vegetation that are simply not suitable for use by the species assemblage concerned. They also include areas that have been cleared of native vegetation and developed for human uses such as agriculture and urban expansion. 
+
+The basic requirement of the CORRIDORS program is a "cost grid". This is a continuous probability surface covering the entire study area and describing the relative costs, to a particular biodiversity entity (e.g. a species or species assemblage), of utilizing each grid cell within the area as habitat, or as a potential linking pathway. Cost grids were derived for the KHC Project through a combination of the assemblage habitat map layer and existing maps of extant vegetation and land tenure. The derived cost grids reflect levels of habitat suitability and tenure class for every grid cell available as a potential linking pathway.  Predicted habitats for the assemblage are deemed the least costly pathways, the best predicted habitat class (class 3) carrying the least cost. Extant vegetation that is not predicted habitat represents a less costly path than cleared land.  Within each habitat suitability class, tenure is weighted to place greater cost on private lands as opposed to public lands and, within public lands, a greater cost on state forests as opposed to NPWS estate and Crown Reserves managed by NPWS.  The effect of tenure weightings is to favour reserved lands over state forests over private lands as corridor links, all else being equal.  Additional costs were applied to mapped estuaries making it more "costly", but not impossible, for the program to link across these features, relative to alternative links, all else being equal.
+
+The CORRIDORS program utilizes paired reference points, assigned in an iterative manner and apportioned within focal habitat types (e.g. assemblage habitats and key habitats), which it works to via the most efficient pathways available according to the cost grid. The reference points are directed into identified strategic areas, making them focal areas for landscape links. For the purposes of the KHC Project analyses 10,000 reference points were used and assigned to the predicted assemblage habitats with a minimum proportion directed into fauna core habitats. 
+
+In seeking to establish the most ecologically valid corridor network for the KHC Project study areas the LCP analyses were undertaken at two levels:
+
+Level 1: a CORRIDORS analysis for each of the each identified fauna assemblage independently (7 for UNC, 7 for LNC, 6 for TAB and 5 for SYD);
+
+Level 2: a CORRIDORS analysis for the combined assemblages within each study area. 
+
+These two levels were selected in order to pursue the goal of enhancing overall landscape connectivity. The first level will establish potential corridor links for species within each assemblage, a clear goal of landscape ecology. The second level will consolidate the landscape approach, whereby the mosaics of habitats and species assemblages across a landscape are treated as one functional system, another ecological requirement enhancing overall landscape connectivity. These between assemblage corridors are also intended to provide for larger scale dispersal and movement (e.g. migration) between predicted assemblage habitats.
+
+The CORRIDORS outputs are continuous probability surface models (map layers) depicting the pathways of least cost linking habitats, and particularly core habitats, of each fauna assemblage individually, plus a combined assemblages run for each KHC study area.  These map layers can be used as planning entities in their own right or, as in this project, can be combined and weighted to derive regional and sub-regional corridors. 
+
+STEP 2. DERIVING REGIONAL AND SUB-REGIONAL CORRIDOR GRIDS FROM "CORRIDORS" PROGRAM OUTPUTS
+
+The CORRIDORS outputs represent potential corridors; assessing them and moving them from potential corridors to Regional and Sub-regional corridors followed another set process for each KHC study area:
+
+A.	Reclassify the continuous probability surface layers depicting the potential corridors for each assemblage to five classes; 0,1,2,3,4, based on perceived thresholds of significance, with class 4 being those potential corridors at the highest probability end of the scale, and of the highest priority for that assemblage;
+
+B.	Do the same for the between assemblage potential corridors for each KHC study area;
+
+C.	For each KHC study area, combine the classified assemblage, and between assemblage corridor grids and sum the combined classes;
+
+D.	Apply thresholds to delineate Regional and Sub-regional corridors;
+
+E.	For interim display purposes (prior to final conversion of the grid map layers to polygon map layers) use existing vegetation mapping to intersect the derived corridors map layers and display vegetated and non-vegetated portions of the regional and sub-regional corridors.
+
+Regional and sub-regional corridors extend across all tenures with certain private lands being crucial links in the network.  In many instances, the least costly pathway to link some assemblage habitats crossed cleared lands. 
+
+The potential regional and sub-regional corridor grid map layers depicting potential corridors linking predicted fauna assemblage habitats are available for each KHC study area and as a combined potential corridors map layer for the entire KHC area.  These map layers can be used as planning entities in their own right but the final stage of the KHC Project (mapping phase) was to undertake final assessment and refinement of the potential regional and sub-regional corridors and to convert them to final polygon layers for implementation on planning and management programs. 
+
+STEP 3. REFINING THE POTENTIAL CORRIDOR GRID MAP LAYERS TO FINAL CORRIDOR POLYGON LAYERS
+
+The potential corridor map layers are useful as planning entities in their own right, providing an index of the importance of the respective corridors identified within the parameters of the analytical programs employed. However, not all of the potential corridors identified by the CORRIDORS process are sensible, from either ecological or practical planning perspectives. Second, the potential corridor grid layers are not easily adaptable to direct field implementation seeking to place the corridors on the ground and determine boundaries. Third, further interpretation is required to tailor the corridors to the fauna assemblages for which they have been derived (Bennett 1999). 
+
+A process of assessment and refinement of the potential corridors is the final stage of the KHC Project (mapping phase) whereby the potential corridor grid map layers are converted to final polygons with defined boundaries. In this process certain potential corridors are accentuated and extraneous potential corridors are ignored. An approach incorporating "focal species" (after Lambeck  1997) was used to tailor the final dimensions of corridors. It is anticipated that this polygon output will be the most appropriate for provision to planners, managers and community groups.
+
+A technique has been developed and refined by the Research and Development Unit of the NPWS GIS Division as a means of refining grid data layers, such as the potential corridors data, to clearer polygon planning units; POLYEDIT is used as an extension to the ARCVIEW GIS program.
+
+ POLYEDIT
+
+POLYEDIT allows the user to select portions of continuous or classified grid map layers for refinement and categorisation. For example, a portion of the potential corridor grid layer can be selected which corresponds to a particular, locally identifiable, part of the landscape. By refining and naming the selected corridor portion the refined corridor can take on a "life of its own" and be recognisable by local planners, managers and community groups. The program allows the progressive and cumulative refinement of the entire grid layer in this manner. After selecting the portion of the grid layer to be refined POLYEDIT requires the user to apply a threshold to the grid, parts of the grid below the threshold will be retained within the derived polygon, the excess will be ignored. The polygon can then be edited to reflect aspects such as pre-determined corridor widths, tenure boundaries and local topography, as indicated by 1:25,000 topographic map layers. By combining the functions provided in the POLYEDIT program, coupled with the shape editing capabilities of ARCVIEW, virtually any configuration of shapes can be readily derived to refine the polygon outputs in line with the mapped features available to the user.
+
+An additional feature of the POLYEDIT program allows the user to identify known corridors that the CORRIDORS analyses have not delineated (non-LCP corridors). This POLYEDIT feature requires the user to outline the non-system corridor, by on-screen digitising.  
+
+For the KHC Project, POLYEDIT was incorporated into the process of assessment and refinement of potential corridors in the following manner:
+
+A.	Visual assessment of the potential corridor layers, within Arcview, against available vegetation mapping, LANDSAT imagery, 1:25,000 topographic maps and tenure maps;
+
+B.	Acceptance or rejection of the potential corridors, and identification of any non-system corridors based on decision rules; 
+
+C.	Refinement of accepted corridor boundaries, utilising POLYEDIT in combination with vegetation mapping, LANDSAT imagery and topographic maps;
+
+D.	Delineation of public land and private land corridors separately;
+
+E.	Implementation of available information on focal species' home ranges, movement and dispersal abilities in modifying and finalising final corridor widths;
+
+F.	Editing of the polygon attributes table, within ARCVIEW, to summarise decisions made in the refinement process; this included a scoring procedure to assess the overall status of each corridor according to six criteria;
+
+G.	Final designation of corridors to the categories, Regional or Sub-regional according to the overall score thresholds.
+
+STEP 4. CONSOLIDATE THE FINAL CORRIDORS MAP LAYER
+
+The final corridors shapefile includes an attributes table that includes the following fields:
+
+"	Name- each individual corridor polygon has been derived independently. Those within NPWS or NSW SF estate are designated the name of the reserve or state forest within which they have been mapped. Those on private lands and crown lands other than NPWS, SF are designated a name indicative of the geographic location in which they occur.
+
+"	Class- the default display field- Regional Corridors are deemed the most important links, typically linking reserves to other reserves, public lands or significant key habitat patches; they often follow natural gradients. Subregional Corridors are also important links but may be alternative or secondary links, more fragmented links, may link regional corridors to other corridors or public lands; they often cross natural gradients.
+
+"	Origin- 1.- Corridors mapped directly from CORRIDORS system analysis; 2. Corridors based on CORRIDORS system analysis but boundaries or pathway modified in accordance with refinement mapping; 3.- Corridors mapped from other sources (eg. Coastal Corridor, mapped Koala Plan corridors; Roads and Traffic Authority Pacific Highway underpass corridors.
+
+"	Notes- For private lands-based corridors only. This field highlights the fauna assemblage(s) for which the corridor has been mapped. A between assemblages note indicates that the corridor was identified and mapped from the "between assemblages" CORRIDORS analysis.
+
+"	Focal Species- For private lands-based corridors only. A broad indication of the focal species for which the overall corridor dimensions were designed- a reflection of the focal species' potential spatial requirements. The focal species reflect the assemblage for which the corridor was mapped.
+
+"	Corridor Score- For private lands-based corridors only. Potential corridors were scored for their conservation value and class designation. The higher the score the higher the perceived corridor conservation value. Corridor scores from 7-10 yielded a "Sub-regional" class rank; scores of 11-18 yielded a "regional" class rank.
+
+"	RTA-Koala- "RTA underpass corridors" coincide with ameliorative fauna underpasses or culverts installed during upgrading works for the Pacific Highway (up until the March 2001). "Koala Corridors" were mapped for Koala Management Plans and included as part of the regional network; as of March 2001 only Coffs Harbour Koala corridors were available for inclusion.
+
+
+
+Positional Accuracy
+
+Species assemblage distributions, key habitats and corridors have been derived from interpolated species distributions generated by modelling point locality species records (with a spatial accuracy of approximately 100m) in relation to mapped environmental layers (with a map scale of 1:100 000 to 1:250 000) (see additional metadata). The CORRIDORS analysis was undertaken at the 500m grid cell size in order to reduce computational burden. The outputs were re-sampled to 100m grid cell for display and storage.
+
+In applying and interpreting the key habitats map layer it should always be remembered that they are based on modelled data and have been developed at the regional scale, to inform regional land, water and vegetation reform programs. The mapped products represent a state-of-the-art consolidation of fauna information for UNE and LNE areas but should be interpreted in terms of a likelihood of occurrence of fauna key habitats; they are indicative representations (see mapping caveat). It should also be noted that the process of development of the key habitats layer has necessarily included qualitative judgements relating to interpretations and setting of thresholds; these have been made based on ecological expertise and explicit decision rules.
+
+
+
+Attribute Accuracy
+
+The species assemblage distributions, derived key habitats, and ultimately the corridors layer are a direct reflection of the species distributional models from which they are developed (see Additional Metadata).
+
+The extent to which the predicted corridors in fact support the assemblages or priority species for which they have been delineated will vary between species, assemblages and areas. 
+
+Field evaluation surveys are required to further assess the attribute accuracy. The form of the assemblage distributions lend themselves ideally to field-based evaluation and monitoring; the occurrence of relative proportions of the species comprising relevant assemblages can be used to assess the predictions.
+
+
+
+Logical Consistency
+
+The Corridors shapefile comprises many individual corridor polygons, each mutually exclusive.
+
+
+
+Completeness
+
+The derived fauna key habitat grid is restricted to the extent of native forest defined by the Forest Ecosystems map layer derived for UNE and LNE RFA studies. For the purposes of this project these layers have been further restricted to delete areas mapped as forestry plantation, agricultural plantation, pasture and cropland, introduced scrub, cleared / partially cleared, camphor laurel. These were mapped categories that were not assigned a conservation target in the RFA process.
+
+Lineage
+
+The process employed in deriving fauna corrodrs is explicit and repeatable in as much as:
+
+* The fauna species models, which are the basic biodiversity entities that the project seeks to summarise and integrate are stored and held by NPWS;
+
+* All relevant data layers, developed at each stage of the project, are stored and held by NPWS;
+
+* The Geographic Information System (GIS) tools developed for the analyses are available as extensions to the ARCVIEW GIS. 
+
+At numerous stages of the analyses, informed interpretation of outputs and assignment of thresholds has been required to move the process along or to finalise an output.  Any qualitative decisions taken have been based on the project manager's ecological expertise and knowledge of the data sets being considered. 
+
+Habitat corridors have been mapped across public and private lands. 
+
+The process of deriving and mapping regional corridors for fauna has involved the use of fauna assemblage distributions and fauna key habitats (see additional metadata referenced below), as surrogates for areas of high fauna conservation, and as the actual habitats to be linked.  This involved a 4 step process which is detailed below:
+
+STEP 1. UNDERTAKE LEAST COST PATHWAYS ANALYSES TO DERIVE POTENTIAL REGIONAL AND SUB-REGIONAL CORRIDORS 
+
+A technique has been developed and refined by the Research and Development Unit of the NPWS GIS Division to aid with the delineation of habitat corridors; NPWS CORRIDORS is used as an extension to the ARCVIEW GIS program.
+
+CORRIDORS is used to identify the pathways that most efficiently link identified significant landscape elements or habitats. The program operates under the principle that species, and their constituent genes, are most likely to move (while foraging, dispersing, breeding, migrating) along gradients of preferred habitat; non-preferred habitats representing varying levels of impedance or even barriers.
+
+For any particular biodiversity entity, in this case species assemblages, the most efficient landscape links are those that exact the "least cost", in terms of energy expenditure, for their use. More favourable habitats, be it for foraging, roosting, nesting or as transitory movements, are assumed to exact less cost for their use than less favourable marginal or non-habitats. Non-habitats may include areas of native vegetation that are simply not suitable for use by the species assemblage concerned. They also include areas that have been cleared of native vegetation and developed for human uses such as agriculture and urban expansion. 
+
+The basic requirement of the CORRIDORS program is a "cost grid". This is a continuous probability surface covering the entire study area and describing the relative costs, to a particular biodiversity entity (e.g. a species or species assemblage), of utilizing each grid cell within the area as habitat, or as a potential linking pathway. Cost grids were derived for the KHC Project through a combination of the assemblage habitat map layer and existing maps of extant vegetation and land tenure. The derived cost grids reflect levels of habitat suitability and tenure class for every grid cell available as a potential linking pathway.  Predicted habitats for the assemblage are deemed the least costly pathways, the best predicted habitat class (class 3) carrying the least cost. Extant vegetation that is not predicted habitat represents a less costly path than cleared land.  Within each habitat suitability class, tenure is weighted to place greater cost on private lands as opposed to public lands and, within public lands, a greater cost on state forests as opposed to NPWS estate and Crown Reserves managed by NPWS.  The effect of tenure weightings is to favour reserved lands over state forests over private lands as corridor links, all else being equal.  Additional costs were applied to mapped estuaries making it more "costly", but not impossible, for the program to link across these features, relative to alternative links, all else being equal.
+
+The CORRIDORS program utilizes paired reference points, assigned in an iterative manner and apportioned within focal habitat types (e.g. assemblage habitats and key habitats), which it works to via the most efficient pathways available according to the cost grid. The reference points are directed into identified strategic areas, making them focal areas for landscape links. For the purposes of the KHC Project analyses 10,000 reference points were used and assigned to the predicted assemblage habitats with a minimum proportion directed into fauna core habitats. 
+
+In seeking to establish the most ecologically valid corridor network for the KHC Project study areas the LCP analyses were undertaken at two levels:
+
+Level 1: a CORRIDORS analysis for each of the each identified fauna assemblage independently (7 for UNC, 7 for LNC, 6 for TAB and 5 for SYD);
+
+Level 2: a CORRIDORS analysis for the combined assemblages within each study area. 
+
+These two levels were selected in order to pursue the goal of enhancing overall landscape connectivity. The first level will establish potential corridor links for species within each assemblage, a clear goal of landscape ecology. The second level will consolidate the landscape approach, whereby the mosaics of habitats and species assemblages across a landscape are treated as one functional system, another ecological requirement enhancing overall landscape connectivity. These between assemblage corridors are also intended to provide for larger scale dispersal and movement (e.g. migration) between predicted assemblage habitats.
+
+The CORRIDORS outputs are continuous probability surface models (map layers) depicting the pathways of least cost linking habitats, and particularly core habitats, of each fauna assemblage individually, plus a combined assemblages run for each KHC study area.  These map layers can be used as planning entities in their own right or, as in this project, can be combined and weighted to derive regional and sub-regional corridors. 
+
+STEP 2. DERIVING REGIONAL AND SUB-REGIONAL CORRIDOR GRIDS FROM "CORRIDORS" PROGRAM OUTPUTS
+
+The CORRIDORS outputs represent potential corridors; assessing them and moving them from potential corridors to Regional and Sub-regional corridors followed another set process for each KHC study area:
+
+A.	Reclassify the continuous probability surface layers depicting the potential corridors for each assemblage to five classes; 0,1,2,3,4, based on perceived thresholds of significance, with class 4 being those potential corridors at the highest probability end of the scale, and of the highest priority for that assemblage;
+
+B.	Do the same for the between assemblage potential corridors for each KHC study area;
+
+C.	For each KHC study area, combine the classified assemblage, and between assemblage corridor grids and sum the combined classes;
+
+D.	Apply thresholds to delineate Regional and Sub-regional corridors;
+
+E.	For interim display purposes (prior to final conversion of the grid map layers to polygon map layers) use existing vegetation mapping to intersect the derived corridors map layers and display vegetated and non-vegetated portions of the regional and sub-regional corridors.
+
+Regional and sub-regional corridors extend across all tenures with certain private lands being crucial links in the network.  In many instances, the least costly pathway to link some assemblage habitats crossed cleared lands. 
+
+The potential regional and sub-regional corridor grid map layers depicting potential corridors linking predicted fauna assemblage habitats are available for each KHC study area and as a combined potential corridors map layer for the entire KHC area.  These map layers can be used as planning entities in their own right but the final stage of the KHC Project (mapping phase) was to undertake final assessment and refinement of the potential regional and sub-regional corridors and to convert them to final polygon layers for implementation on planning and management programs. 
+
+STEP 3. REFINING THE POTENTIAL CORRIDOR GRID MAP LAYERS TO FINAL CORRIDOR POLYGON LAYERS
+
+The potential corridor map layers are useful as planning entities in their own right, providing an index of the importance of the respective corridors identified within the parameters of the analytical programs employed. However, not all of the potential corridors identified by the CORRIDORS process are sensible, from either ecological or practical planning perspectives. Second, the potential corridor grid layers are not easily adaptable to direct field implementation seeking to place the corridors on the ground and determine boundaries. Third, further interpretation is required to tailor the corridors to the fauna assemblages for which they have been derived (Bennett 1999). 
+
+A process of assessment and refinement of the potential corridors is the final stage of the KHC Project (mapping phase) whereby the potential corridor grid map layers are converted to final polygons with defined boundaries. In this process certain potential corridors are accentuated and extraneous potential corridors are ignored. An approach incorporating "focal species" (after Lambeck  1997) was used to tailor the final dimensions of corridors. It is anticipated that this polygon output will be the most appropriate for provision to planners, managers and community groups.
+
+A technique has been developed and refined by the Research and Development Unit of the NPWS GIS Division as a means of refining grid data layers, such as the potential corridors data, to clearer polygon planning units; POLYEDIT is used as an extension to the ARCVIEW GIS program.
+
+ POLYEDIT
+
+POLYEDIT allows the user to select portions of continuous or classified grid map layers for refinement and categorisation. For example, a portion of the potential corridor grid layer can be selected which corresponds to a particular, locally identifiable, part of the landscape. By refining and naming the selected corridor portion the refined corridor can take on a "life of its own" and be recognisable by local planners, managers and community groups. The program allows the progressive and cumulative refinement of the entire grid layer in this manner. After selecting the portion of the grid layer to be refined POLYEDIT requires the user to apply a threshold to the grid, parts of the grid below the threshold will be retained within the derived polygon, the excess will be ignored. The polygon can then be edited to reflect aspects such as pre-determined corridor widths, tenure boundaries and local topography, as indicated by 1:25,000 topographic map layers. By combining the functions provided in the POLYEDIT program, coupled with the shape editing capabilities of ARCVIEW, virtually any configuration of shapes can be readily derived to refine the polygon outputs in line with the mapped features available to the user.
+
+An additional feature of the POLYEDIT program allows the user to identify known corridors that the CORRIDORS analyses have not delineated (non-LCP corridors). This POLYEDIT feature requires the user to outline the non-system corridor, by on-screen digitising.  
+
+For the KHC Project, POLYEDIT was incorporated into the process of assessment and refinement of potential corridors in the following manner:
+
+A.	Visual assessment of the potential corridor layers, within Arcview, against available vegetation mapping, LANDSAT imagery, 1:25,000 topographic maps and tenure maps;
+
+B.	Acceptance or rejection of the potential corridors, and identification of any non-system corridors based on decision rules; 
+
+C.	Refinement of accepted corridor boundaries, utilising POLYEDIT in combination with vegetation mapping, LANDSAT imagery and topographic maps;
+
+D.	Delineation of public land and private land corridors separately;
+
+E.	Implementation of available information on focal species' home ranges, movement and dispersal abilities in modifying and finalising final corridor widths;
+
+F.	Editing of the polygon attributes table, within ARCVIEW, to summarise decisions made in the refinement process; this included a scoring procedure to assess the overall status of each corridor according to six criteria;
+
+G.	Final designation of corridors to the categories, Regional or Sub-regional according to the overall score thresholds.
+
+STEP 4. CONSOLIDATE THE FINAL CORRIDORS MAP LAYER
+
+The final corridors shapefile includes an attributes table that includes the following fields:
+
+"	Name- each individual corridor polygon has been derived independently. Those within NPWS or NSW SF estate are designated the name of the reserve or state forest within which they have been mapped. Those on private lands and crown lands other than NPWS, SF are designated a name indicative of the geographic location in which they occur.
+
+"	Class- the default display field- Regional Corridors are deemed the most important links, typically linking reserves to other reserves, public lands or significant key habitat patches; they often follow natural gradients. Subregional Corridors are also important links but may be alternative or secondary links, more fragmented links, may link regional corridors to other corridors or public lands; they often cross natural gradients.
+
+"	Origin- 1.- Corridors mapped directly from CORRIDORS system analysis; 2. Corridors based on CORRIDORS system analysis but boundaries or pathway modified in accordance with refinement mapping; 3.- Corridors mapped from other sources (eg. Coastal Corridor, mapped Koala Plan corridors; Roads and Traffic Authority Pacific Highway underpass corridors.
+
+"	Notes- For private lands-based corridors only. This field highlights the fauna assemblage(s) for which the corridor has been mapped. A between assemblages note indicates that the corridor was identified and mapped from the "between assemblages" CORRIDORS analysis.
+
+"	Focal Species- For private lands-based corridors only. A broad indication of the focal species for which the overall corridor dimensions were designed- a reflection of the focal species' potential spatial requirements. The focal species reflect the assemblage for which the corridor was mapped.
+
+"	Corridor Score- For private lands-based corridors only. Potential corridors were scored for their conservation value and class designation. The higher the score the higher the perceived corridor conservation value. Corridor scores from 7-10 yielded a "Sub-regional" class rank; scores of 11-18 yielded a "regional" class rank.
+
+"	RTA-Koala- "RTA underpass corridors" coincide with ameliorative fauna underpasses or culverts installed during upgrading works for the Pacific Highway (up until the March 2001). "Koala Corridors" were mapped for Koala Management Plans and included as part of the regional network; as of March 2001 only Coffs Harbour Koala corridors were available for inclusion.
+
+
+
+Positional Accuracy
+
+Species assemblage distributions, key habitats and corridors have been derived from interpolated species distributions generated by modelling point locality species records (with a spatial accuracy of approximately 100m) in relation to mapped environmental layers (with a map scale of 1:100 000 to 1:250 000) (see additional metadata). The CORRIDORS analysis was undertaken at the 500m grid cell size in order to reduce computational burden. The outputs were re-sampled to 100m grid cell for display and storage.
+
+In applying and interpreting the key habitats map layer it should always be remembered that they are based on modelled data and have been developed at the regional scale, to inform regional land, water and vegetation reform programs. The mapped products represent a state-of-the-art consolidation of fauna information for UNE and LNE areas but should be interpreted in terms of a likelihood of occurrence of fauna key habitats; they are indicative representations (see mapping caveat). It should also be noted that the process of development of the key habitats layer has necessarily included qualitative judgements relating to interpretations and setting of thresholds; these have been made based on ecological expertise and explicit decision rules.
+
+
+
+Attribute Accuracy:
+
+
+
+The species assemblage distributions, derived key habitats, and ultimately the corridors layer are a direct reflection of the species distributional models from which they are developed (see Additional Metadata).
+
+The extent to which the predicted corridors in fact support the assemblages or priority species for which they have been delineated will vary between species, assemblages and areas. 
+
+Field evaluation surveys are required to further assess the attribute accuracy. The form of the assemblage distributions lend themselves ideally to field-based evaluation and monitoring; the occurrence of relative proportions of the species comprising relevant assemblages can be used to assess the predictions.
+
+
+
+Logical Consistency:
+
+
+
+The Corridors shapefile comprises many individual corridor polygons, each mutually exclusive.
+
+
+
+Completeness:
+
+
+
+The derived fauna key habitat grid is restricted to the extent of native forest defined by the Forest Ecosystems map layer derived for UNE and LNE RFA studies. For the purposes of this project these layers have been further restricted to delete areas mapped as forestry plantation, agricultural plantation, pasture and cropland, introduced scrub, cleared / partially cleared, camphor laurel. These were mapped categories that were not assigned a conservation target in the RFA process.<br><br><span style="font-weight:bold; ">Scope:</span><span>&nbsp;&nbsp; </span><span></span>dataset<br><br><span style="font-weight:bold; ">Completeness:</span><span>&nbsp;&nbsp; </span><br><br><span style="font-weight:bold; ">Logical consistency:</span><span>&nbsp;&nbsp; </span><br><br><span style="font-weight:bold; ">Positional accuracy:</span><span>&nbsp;&nbsp; </span><br><br><span style="font-weight:bold; ">Attribute accuracy:</span><span>&nbsp;&nbsp;&nbsp; </span>The species assemblage distributions, derived key habitats, and ultimately the corridors layer are a direct reflection of the species distributional models from which they are developed (see Additional Metadata).
+
+The extent to which the predicted corridors in fact support the assemblages or priority species for which they have been delineated will vary between species, assemblages and areas. 
+
+Field evaluation surveys are required to further assess the attribute accuracy. The form of the assemblage distributions lend themselves ideally to field-based evaluation and monitoring; the occurrence of relative proportions of the species comprising relevant assemblages can be used to assess the predictions.<br><br><br><hr><br><h2><a name="Status &amp; Maintenance"><span>Data Status and Maintenance</span></a></h2><span style="font-weight:bold; ">Status:</span><span>&nbsp;&nbsp; </span><span></span>completed<br><span style="font-weight:bold; ">Data type:</span><span>&nbsp;&nbsp; </span><span></span>vector<br><span style="font-weight:bold; ">Resource update frequency:</span><span>&nbsp;&nbsp; </span><span></span>notPlanned<br><span style="font-weight:bold; ">Resource update date:</span><span>&nbsp;&nbsp; </span>2010-01-10<br><br><hr><br><h2><a name="Resolution"><span>Spatial Resolution</span></a></h2><span style="font-weight:bold; ">Scale:</span><span>&nbsp;&nbsp; 1:</span>50000<br><span>or</span><br><span style="font-weight:bold; ">Ground sample distance (raster derived):</span><br><br><hr><br><h2><a name="Browse Graphic"><span>Browse Graphic</span></a></h2><span style="font-weight:bold; ">URL:</span><br><span style="font-weight:bold; ">Caption:</span><br><span style="font-weight:bold; ">Type:</span><br><br><hr><br><h2><a name="Theme &amp; Keywords"><span>Data Theme</span></a></h2><span style="font-weight:bold; ">Theme topics:</span><br>nsw<span> - </span>FAUNA<span> - </span><br><br><span style="font-weight:bold; ">ANZLIC Keywords:</span><br><br><br><hr><br><h2><a name="RS"><span>Reference System Information</span></a></h2><span style="font-weight:bold; ">Reference system:</span><span>&nbsp;&nbsp; </span>GDA94 / Geographic<br><br><hr><br><h2><a name="S-domain"><span>Spatial Domain</span></a></h2><span style="font-weight:bold; ">West Bounding Longitude:</span><span>&nbsp;&nbsp; </span>150.242409<br><span style="font-weight:bold; ">South Bounding Longitude:</span><span>&nbsp;&nbsp; </span>-33.547233<br><span style="font-weight:bold; ">East Bounding Longitude:</span><span>&nbsp;&nbsp; </span>153.631698<br><span style="font-weight:bold; ">North Bounding Longitude:</span><span>&nbsp;&nbsp; </span>-28.158229<br><br><hr><br><h2><a name="Time"><span>Temporal Extent of the Data</span></a></h2><span style="font-weight:bold; ">Beginning date:&nbsp;&nbsp;&nbsp; </span><br><span style="font-weight:bold; ">Ending date:</span><br><span style="font-weight:bold; ">Instant date:</span><span>&nbsp;&nbsp;&nbsp; </span>2001-01-01<br><br><hr><br><h2><a name="Distr"><span>Distribution Information</span></a></h2><span style="font-weight:bold; ">Stored format name:</span><span>&nbsp;&nbsp; </span><br><span style="font-weight:bold; ">Stored format version:</span><br><br><span style="font-weight:bold; ">Distribution format name:</span><br><span style="font-weight:bold; ">Distribution format version:</span><br><span style="font-weight:bold; ">Download URL:</span><span>&nbsp;&nbsp;&nbsp;&nbsp; http://mapdata.environment.nsw.gov.au/DDWA</span><br><span style="font-weight:bold; ">Data size:</span><span>, </span><br><br><span style="font-weight:bold; ">Distribution contacts:</span><br><span style="font-weight:bold; ">Position name:</span><span>&nbsp;&nbsp; </span>Data Broker<br><span style="font-weight:bold; ">Organisation:</span><span>&nbsp;&nbsp; </span>NSW Department of Environment,Climate Change and Water (DECCW)<br><span style="font-weight:bold; ">Address:</span>PO Box 3720<span>, </span>Parramatta<span>, </span>NSW<span>, </span>2124<br><span style="font-weight:bold; ">Voice:</span><span>&nbsp;&nbsp; </span>02 6740 2349<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-weight:bold; ">Fax:</span><span>&nbsp;&nbsp; </span>02 6742 3129<br><span style="font-weight:bold; ">Email:</span><span>&nbsp;&nbsp; </span>data.broker@environment.nsw.gov.au<br><br><hr><br><h2><a name="contact"><span>Metadata Contact Information</span></a></h2><span style="font-weight:bold; ">Organisation name:</span><span>&nbsp;&nbsp; </span>NSW Department of Environment,Climate Change and Water (DECCW)<br><span style="font-weight:bold; ">Position name:</span><span>&nbsp;&nbsp; </span>Data Broker<br><span style="font-weight:bold; ">Voice:</span><span>&nbsp;&nbsp;&nbsp; </span>02 6740 2349<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-weight:bold; ">Fax:</span><span>&nbsp;&nbsp;&nbsp; </span>02 6742 3129<br><span style="font-weight:bold; ">Email:</span><span>&nbsp;&nbsp; </span>data.broker@environment.nsw.gov.au<br><br><hr><br><h2><a name="Met-Ref"><span>Metadata Reference Information</span></a></h2><span style="font-weight:bold; ">Metadata standard name:</span><span>&nbsp;&nbsp; </span>ANZLIC Metadata Profile: An Australian/New Zealand Profile of AS/NZS ISO 19115:2005, Geographic information - Metadata<br><span style="font-weight:bold; ">Metadata standard version:</span><span>&nbsp;&nbsp; </span>1.1<br><br><hr><br><h2><a name="Met-Ref"><span>Additional metadata </span></a></h2>Gilmore, A. M. and Parnaby, H. E., 1994. Vertebrate Fauna of Conservation Concern in North-East NSW Forests. North East Forests Biodiversity Study, Report No. 3e, unpublished report, NSW National Parks and Wildlife Service.
+
+
+
+Metadata statement for UNE/LNE Key Habitats.
+
+
+
+Metadata statement for UNE/LNE RFA Centres of Endemism.
+
+
+
+NPWS, 1994a. Environmental GIS database for north-east NSW. North East Forests Biodiversity Study, Report No. 2, unpublished report, NSW National Parks and Wildlife Service.
+
+
+
+NPWS, 1994b. Fauna of North-East NSW Forests. North East Forests Biodiversity Study, Report No. 3, unpublished report, NSW National Parks and Wildlife Service.
+
+
+
+NPWS 1999. Modelling areas of habitat significance for vertebrate fauna and vascular flora in north east NSW. A project undertaken for the Joint Commonwealth NSW Regional Forest Agreement Steering Committee as part of the NSW Comprehensive Regional Assessments.
+
+
+
+Scotts, D., Drielsma, M, Whish, G. and Kingma, L. in prep. Regional key habitats and corridors for forest fauna of north-east New South Wales; a framework to focus conservation planning, assessment and management.<br><br><hr><br><br><br><br></body></html>
