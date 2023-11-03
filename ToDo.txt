@@ -35,3 +35,6 @@ mapLayers[uuid].layerObject.remove()
 mapLayers[Object.keys(mapLayers)[0]].layerObject.addTo(leafletMap);
 
 
+
+
+git config --add --local core.sshCommand 'ssh -i /Users/ianscrivener/___HCEC/__BTH_Leaflet'
