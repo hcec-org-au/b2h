@@ -64,9 +64,9 @@ async function build_map(layerConfig,map,map_layers) {
 //     // console.log(ev);
 //     document.getElementById('f2').innerHTML = `<b>Last click coords:</b> ${r(ev.latlng.lat)} ${r(ev.latlng.lng)}`;
 // });
-// map.on('mousemove', function(ev){
-//     document.getElementById('f1').innerHTML = `<b>Mouse coords:</b> ${r(ev.latlng.lat)} ${r(ev.latlng.lng)}`;
-// });
+map.on('mousemove', function(ev){
+    document.getElementById('f1').innerHTML = `<b>Mouse coords:</b> ${r(ev.latlng.lat)} ${r(ev.latlng.lng)}`;
+});
 
   // Throttle fn
   //L.throttle(myFunction(){

@@ -64,9 +64,9 @@ async function build_map(layerConfig,map,map_layers) {
 //     // console.log(ev);
 //     document.getElementById('f2').innerHTML = `<b>Last click coords:</b> ${r(ev.latlng.lat)} ${r(ev.latlng.lng)}`;
 // });
-// map.on('mousemove', function(ev){
-//     document.getElementById('f1').innerHTML = `<b>Mouse coords:</b> ${r(ev.latlng.lat)} ${r(ev.latlng.lng)}`;
-// });
+map.on('mousemove', function(ev){
+    document.getElementById('f1').innerHTML = `<b>Mouse coords:</b> ${r(ev.latlng.lat)} ${r(ev.latlng.lng)}`;
+});
 
   // Throttle fn
   //L.throttle(myFunction(){
@@ -367,6 +367,22 @@ const consoleLogStuff = function (arr) {
   });
 }
 
+// helper coord rounding ##########################################
+function r(val){
+  return Number(val).toFixed(conf.coordRounding)
+}
+
+
+// #######################################################
+// map click handler
+function updateInfo() {
+    // const { zState.centreLat, zState.centreLat } = map.getCenter();
+    const zoom = map.getZoom();
+    markerPlace.innerHTML = `center: ${lat.toFixed(5)}, ${lng.toFixed(
+        5
+    )} | zoom: ${zoom}`;
+}
+
 let menuOpen      = document.getElementById('menu-toggle-open');
 let menuClose     = document.getElementById('menu-toggle-close');
 // let menuTop    = document.getElementById('menu-top-close');
@@ -442,6 +458,16 @@ let mapLayers = {};
 
 let leafletMap = L.map('map').setView([conf.lat, conf.long], conf.zoom);
 let leafletControl = L.control.layers().addTo(leafletMap);
+
+// leafletMap.cursor.enable();
+
+// Zoom readout in base bar
+document.getElementById('f3').innerHTML = `<b>Zoom level:</b> ${conf.zoom} `
+leafletMap.on('zoomend', function(ev) {
+  document.getElementById('f3').innerHTML = `<b>Zoom level:</b> ${ev.target._zoom} `;
+});
+
+
 
 async function main(mapLayers,leafletMap) {
   // build the base leaflet.js map

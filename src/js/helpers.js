@@ -31,3 +31,19 @@ const consoleLogStuff = function (arr) {
     console.log(value, ':\n', JSON.stringify(eval(value)));
   });
 }
+
+// helper coord rounding ##########################################
+function r(val){
+  return Number(val).toFixed(conf.coordRounding)
+}
+
+
+// #######################################################
+// map click handler
+function updateInfo() {
+    // const { zState.centreLat, zState.centreLat } = map.getCenter();
+    const zoom = map.getZoom();
+    markerPlace.innerHTML = `center: ${lat.toFixed(5)}, ${lng.toFixed(
+        5
+    )} | zoom: ${zoom}`;
+}

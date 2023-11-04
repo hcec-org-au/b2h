@@ -25,6 +25,16 @@ let mapLayers = {};
 let leafletMap = L.map('map').setView([conf.lat, conf.long], conf.zoom);
 let leafletControl = L.control.layers().addTo(leafletMap);
 
+// leafletMap.cursor.enable();
+
+// Zoom readout in base bar
+document.getElementById('f3').innerHTML = `<b>Zoom level:</b> ${conf.zoom} `
+leafletMap.on('zoomend', function(ev) {
+  document.getElementById('f3').innerHTML = `<b>Zoom level:</b> ${ev.target._zoom} `;
+});
+
+
+
 async function main(mapLayers,leafletMap) {
   // build the base leaflet.js map
 

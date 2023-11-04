@@ -47,7 +47,6 @@ async function main() {
     let baseMaps = {};
     let overlayMaps = {};
 
-
     // map.cursor.enable();
 
     // get the layerConfig JSONL from a helper fuction
