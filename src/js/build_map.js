@@ -14,7 +14,7 @@ const overlay_template = function(layer){
 const base_template = function(layer){
   let fill = layer.visible ? "-fill" : "";
   return `
-    <div class="layer-1" onclick="console.log('${layer.uuid}')">
+    <div class="layer-1" onclick="set_base('${layer.uuid}')">
         &nbsp;<abbr title="${layer.uuid}: change visibility"><i id="base-${layer.uuid}" class="bi bi-circle${fill}"></i></abbr>
         ${layer.label}
     </div>
@@ -77,6 +77,7 @@ async function build_map(layerConfig,map,map_layers) {
   // loop through the layerConfig array and create the leaflet layers
   layerConfig.forEach((layer) => {
 
+
     // if(layer.visible === 0){
     //   return;
     // }
@@ -96,10 +97,15 @@ async function build_map(layerConfig,map,map_layers) {
                         // label:          layer.label.trim(),
                         layerConfig:    layer,
                         visible:        layer.visible,
-                        active:         layer.active
+                        active:         layer.active,
+                        layerGroup:     layer.layerGroup
                         // show:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 1;},
                         // hide:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 0;}
                         };
+
+    if( layer.visible === 1 && layer.layerGroup === "BASE"){
+        map_layers.baseLayer = uuid;
+    }
 
     // ##################################################################
     // MAKE RIGHT HAND LAYER MENU FOR BASE LAYERS

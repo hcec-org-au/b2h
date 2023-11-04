@@ -3,6 +3,29 @@ mapLayers
 uuids in mapLayers
 */
 
+
+const set_base = function (uuid){
+  let id_name = "base-" + mapLayers.baseLayer;
+  hide(mapLayers.baseLayer);
+  document.getElementById(id_name).className = "bi bi-circle";
+
+  id_name = "base-" + uuid;
+  mapLayers.baseLayer = uuid;
+  show(uuid);
+  document.getElementById(id_name).className = "bi bi-circle-fill";
+  // return mapLayers[uuid].layerGroup === "BASE"
+}
+
+
+const is_base = function (uuid){
+  return mapLayers[uuid].layerGroup === "BASE"
+}
+
+const get_group = function (uuid){
+  return mapLayers[uuid].layerGroup
+}
+
+
 const is_valid = function (uuid){
   return Object.keys(mapLayers).includes(uuid)
 }
