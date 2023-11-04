@@ -37,7 +37,4 @@ async function main(mapLayers,leafletMap) {
   build_map(layerConfig,leafletMap,mapLayers);
 }
 
-
-
-
 main(mapLayers,leafletMap);

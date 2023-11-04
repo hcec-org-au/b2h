@@ -1,5 +1,5 @@
-// ##############################################################
-// helper function - load layer JSONL      ######################
+// #######################################################
+// helper function - load layer JSONL
 async function loadJsonl() {
   let jsonData = []
 

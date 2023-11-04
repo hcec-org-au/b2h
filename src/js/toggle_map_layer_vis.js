@@ -11,7 +11,4 @@ const toggleLayer = function(i){
     map.addLayer(layer);
     console.log("The layer is not on the map.");
   }
-
 }
-
-

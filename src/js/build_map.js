@@ -2,8 +2,8 @@
 const overlay_template = function(layer){
   let fill = layer.visible ? "-fill" : "";
   return `
-    <div class="layer-1" onclick="console.log('${layer.uuid}')">
-      &nbsp;<abbr title="${layer.uuid} - change visibility"><i class="bi bi-eye${fill}"></i></abbr>
+    <div class="layer-1" onclick="toggle('${layer.uuid}') ">
+      &nbsp;<abbr title="${layer.uuid} - change visibility"><i id="div-${layer.uuid}" class="bi bi-eye${fill}"></i></abbr>
     <!--      <abbr title="${layer.uuid}: this layer is visible - click to hide"><i class="bi bi-search"></i></abbr>-->
       ${layer.label}
     </div>
@@ -15,7 +15,7 @@ const base_template = function(layer){
   let fill = layer.visible ? "-fill" : "";
   return `
     <div class="layer-1" onclick="console.log('${layer.uuid}')">
-        &nbsp;<abbr title="${layer.uuid}: change visibility"><i class="bi bi-circle${fill}"></i></abbr>
+        &nbsp;<abbr title="${layer.uuid}: change visibility"><i id="base-${layer.uuid}" class="bi bi-circle${fill}"></i></abbr>
         ${layer.label}
     </div>
   `
@@ -96,9 +96,9 @@ async function build_map(layerConfig,map,map_layers) {
                         // label:          layer.label.trim(),
                         layerConfig:    layer,
                         visible:        layer.visible,
-                        active:         layer.active,
-                        show:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 1;},
-                        hide:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 0;}
+                        active:         layer.active
+                        // show:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 1;},
+                        // hide:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 0;}
                         };
 
     // ##################################################################
@@ -205,10 +205,8 @@ async function build_map(layerConfig,map,map_layers) {
         map_layers[uuid].layerObject.addTo(map);
       }
 
-
       // console.log(layer.url);
       // console.log(JSON.stringify(layer.showLayers))
-
     }
 
     // ##################################################################
@@ -226,9 +224,6 @@ async function build_map(layerConfig,map,map_layers) {
       if(layer.visible === 1){
         map_layers[uuid].layerObject.addTo(map);
       }
-
-
-
     }
 
     // ##################################################################

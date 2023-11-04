@@ -2,8 +2,8 @@
 const overlay_template = function(layer){
   let fill = layer.visible ? "-fill" : "";
   return `
-    <div class="layer-1" onclick="console.log('${layer.uuid}')">
-      &nbsp;<abbr title="${layer.uuid} - change visibility"><i class="bi bi-eye${fill}"></i></abbr>
+    <div class="layer-1" onclick="toggle('${layer.uuid}') ">
+      &nbsp;<abbr title="${layer.uuid} - change visibility"><i id="div-${layer.uuid}" class="bi bi-eye${fill}"></i></abbr>
     <!--      <abbr title="${layer.uuid}: this layer is visible - click to hide"><i class="bi bi-search"></i></abbr>-->
       ${layer.label}
     </div>
@@ -15,7 +15,7 @@ const base_template = function(layer){
   let fill = layer.visible ? "-fill" : "";
   return `
     <div class="layer-1" onclick="console.log('${layer.uuid}')">
-        &nbsp;<abbr title="${layer.uuid}: change visibility"><i class="bi bi-circle${fill}"></i></abbr>
+        &nbsp;<abbr title="${layer.uuid}: change visibility"><i id="base-${layer.uuid}" class="bi bi-circle${fill}"></i></abbr>
         ${layer.label}
     </div>
   `
@@ -96,9 +96,9 @@ async function build_map(layerConfig,map,map_layers) {
                         // label:          layer.label.trim(),
                         layerConfig:    layer,
                         visible:        layer.visible,
-                        active:         layer.active,
-                        show:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 1;},
-                        hide:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 0;}
+                        active:         layer.active
+                        // show:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 1;},
+                        // hide:           function(){mapLayers[uuid].layerObject.addTo(leafletMap);return 0;}
                         };
 
     // ##################################################################
@@ -205,10 +205,8 @@ async function build_map(layerConfig,map,map_layers) {
         map_layers[uuid].layerObject.addTo(map);
       }
 
-
       // console.log(layer.url);
       // console.log(JSON.stringify(layer.showLayers))
-
     }
 
     // ##################################################################
@@ -226,9 +224,6 @@ async function build_map(layerConfig,map,map_layers) {
       if(layer.visible === 1){
         map_layers[uuid].layerObject.addTo(map);
       }
-
-
-
     }
 
     // ##################################################################
@@ -256,13 +251,28 @@ async function build_map(layerConfig,map,map_layers) {
 // this.xxx = L.control.layers(baseMaps, overlayMaps)
 
 
+/*
+mapLayers
+uuids in mapLayers
+*/
+
+const is_valid = function (uuid){
+  return Object.keys(mapLayers).includes(uuid)
+}
+
+const is_visible = function (uuid){
+   return is_valid(uuid) && mapLayers[uuid].visible === 1
+}
+
 const show = function (uuid){
     mapLayers[uuid].layerObject.addTo(leafletMap);
+    mapLayers[uuid].visible = 1;
     console.log("show",uuid);
 }
 
 const hide = function (uuid){
     mapLayers[uuid].layerObject.remove();
+    mapLayers[uuid].visible = 0;
     console.log("hide",uuid);
 }
 
@@ -272,24 +282,27 @@ const list = function (){
 
 const show_all = function (){
   Object.keys(mapLayers).forEach(value => {
-    mapLayers[value].layerObject.addTo(leafletMap);
-    console.log("show",value);
+    show(value);
   });
 }
 
 const hide_all = function (){
   Object.keys(mapLayers).forEach(value => {
-    mapLayers[value].layerObject.remove();
-    console.log("hide",value);
+    hide(value);
   });
 }
 
-
 const toggle = function (uuid){
-  mapLayers[uuid].layerObject.remove();
-  console.log("hide",uuid);
+  let id_name = "div-" + uuid;
+  if (is_visible(uuid)){
+    document.getElementById(id_name).className = "bi bi-eye";
+    hide(uuid);
+  }
+  else{
+    document.getElementById(id_name).className = "bi bi-eye-fill";
+    show(uuid);
+  }
 }
-
 
 // ##############################################################
 // helper function - sort an array or objects
@@ -325,9 +338,9 @@ const consoleLogStuff = function (arr) {
   });
 }
 
-let menuOpen = document.getElementById('menu-toggle-open');
-let menuClose = document.getElementById('menu-toggle-close');
-// let menuTop = document.getElementById('menu-top-close');
+let menuOpen      = document.getElementById('menu-toggle-open');
+let menuClose     = document.getElementById('menu-toggle-close');
+// let menuTop    = document.getElementById('menu-top-close');
 let offcanvasMenu = document.getElementById('offcanvas-menu');
 
 menuOpen.addEventListener('click', toggleMenuOpen);
@@ -337,8 +350,8 @@ menuClose.addEventListener('click', toggleMenuClose);
 function toggleMenuClose(e) {
     e.preventDefault();
     offcanvasMenu.classList.toggle('show');
-    menuOpen.style.display = 'block';
-    menuClose.style.display = 'none';
+    menuOpen.style.display    = 'block';
+    menuClose.style.display   = 'none';
 }
 
 function toggleMenuOpen(e) {
@@ -346,12 +359,12 @@ function toggleMenuOpen(e) {
       e.preventDefault();
     }
     offcanvasMenu.classList.toggle('show');
-    menuOpen.style.display = 'none';
-    menuClose.style.display = 'block';
+    menuOpen.style.display    = 'none';
+    menuClose.style.display   = 'block';
 }
 
-// ##############################################################
-// helper function - load layer JSONL      ######################
+// #######################################################
+// helper function - load layer JSONL
 async function loadJsonl() {
   let jsonData = []
 
@@ -413,9 +426,6 @@ async function main(mapLayers,leafletMap) {
   build_map(layerConfig,leafletMap,mapLayers);
 }
 
-
-
-
 main(mapLayers,leafletMap);
 
 let overlay_active = null;
@@ -440,7 +450,6 @@ function overlay_on(id) {
     }
 }
 
-
 function overlay_off(elem) {
     elem.style.display = "none";
     overlay_active = null;
@@ -459,10 +468,7 @@ const toggleLayer = function(i){
     map.addLayer(layer);
     console.log("The layer is not on the map.");
   }
-
 }
-
-
 
 window.onload = function() {
   // console.log('HTML has fully loaded');

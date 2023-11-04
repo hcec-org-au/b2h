@@ -20,7 +20,6 @@ function overlay_on(id) {
     }
 }
 
-
 function overlay_off(elem) {
     elem.style.display = "none";
     overlay_active = null;

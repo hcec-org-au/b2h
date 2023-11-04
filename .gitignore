@@ -132,3 +132,7 @@ out
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+/tmp
+/tmp.json
+/node_modules/
+/_trash/
