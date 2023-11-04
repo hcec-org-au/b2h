@@ -1,21 +1,20 @@
 // ########################################
 const overlay_template = function(layer){
-  let fill = layer.visible ? "-fill" : "";
+  let isVisible = layer.visible ? "bi-eye-fill" : "bi-eye-slash";
   return `
-    <div class="layer-1" onclick="toggle('${layer.uuid}') ">
-      &nbsp;<abbr title="${layer.uuid} - change visibility"><i id="div-${layer.uuid}" class="bi bi-eye${fill}"></i></abbr>
-    <!--      <abbr title="${layer.uuid}: this layer is visible - click to hide"><i class="bi bi-search"></i></abbr>-->
-      ${layer.label}
+    <div class="layer-1" onclick="set_base('${layer.uuid}')">
+        <abbr title="toggle layer"><i id="base-${layer.uuid}" class="bi ${isVisible}"></i></abbr>
+        ${layer.label}
     </div>
   `
 }
 
 // ########################################
 const base_template = function(layer){
-  let fill = layer.visible ? "-fill" : "";
+  let isVisible = layer.visible ? "bi-eye-fill" : "bi-eye-slash";
   return `
     <div class="layer-1" onclick="set_base('${layer.uuid}')">
-        &nbsp;<abbr title="${layer.uuid}: change visibility"><i id="base-${layer.uuid}" class="bi bi-circle${fill}"></i></abbr>
+        <abbr title="toggle layer"><i id="base-${layer.uuid}" class="bi ${isVisible}"></i></abbr>
         ${layer.label}
     </div>
   `

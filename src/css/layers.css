@@ -16,12 +16,12 @@
 
 abbr {
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     position: relative
 }
 
 abbr:hover::after {
-    background: #ffa556;
+    background: #eee;
     border-radius: 4px;
     bottom: 100%;
     content: attr(title);
