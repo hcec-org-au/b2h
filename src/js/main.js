@@ -23,7 +23,6 @@ let zState = {
 let mapLayers = {};
 
 let leafletMap = L.map('map').setView([conf.lat, conf.long], conf.zoom);
-let leafletControl = L.control.layers().addTo(leafletMap);
 
 // leafletMap.cursor.enable();
 

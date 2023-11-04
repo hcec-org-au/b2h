@@ -90,7 +90,7 @@ function htmlFn(){
       .pipe(dest('./'))
       .on('end', function(){
           browserSyncObj.reload();
-          console.log('htmlFn ran...');
+          console.log('htmlFn2 ran...');
       })
 }
 

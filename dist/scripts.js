@@ -109,6 +109,10 @@ map.on('mousemove', function(ev){
 
     // ##################################################################
     // MAKE RIGHT HAND LAYER MENU FOR BASE LAYERS
+
+    // ToDo: change code to case/switch
+    // add 'DEVELOPMENT' & 'CORRIDOR'
+
     if (layer.layerGroup === 'BASE') {
       // console.log(layer.label, layer.displayOrder);
       let html = base_template(layer);
@@ -127,6 +131,28 @@ map.on('mousemove', function(ev){
     // if (layer.visible !== 1) {
     //   // return; // skips the current iteration and continues with the next
     // }
+    // ##################################################################
+    // OSM - https://leafletjs.com/
+    if (layer.layerType === 'osm') {
+
+      map_layers[uuid].layerConfig = {
+        // layers: layer.showLayers,
+        // format: 'image/png',
+        // transparent: layer.transparent === 1,
+        // attribution: layer.label,
+        url: layer.url
+      }
+
+      map_layers[uuid].layerObject = L.tileLayer(
+        layer.url,
+        layerConfig
+      );
+
+      if(layer.visible === 1){
+        map_layers[uuid].layerObject.addTo(map);
+      }
+    }
+
 
     // ##################################################################
     // WMS - https://leafletjs.com/examples/wms/wms.html
@@ -457,7 +483,6 @@ let zState = {
 let mapLayers = {};
 
 let leafletMap = L.map('map').setView([conf.lat, conf.long], conf.zoom);
-let leafletControl = L.control.layers().addTo(leafletMap);
 
 // leafletMap.cursor.enable();
 
