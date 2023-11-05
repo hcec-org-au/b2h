@@ -1,6 +1,36 @@
+const conf = {
+  zoom: 9,
+  lat: -33.0,
+  long: 151.5833,
+  coordRounding: 4
+};
+
+const icons = {
+  corridors: {
+    header: 'bi-lock-fill',
+    on: 'bi-eye-fill',
+    off: 'bi-eye-slash'
+  },
+  developments: {
+    header: 'bi-tools',
+    on: 'bi-eye-fill',
+    off: 'bi-eye-slash'
+  },
+  overlays: {
+    header: 'bi-card-checklist',
+    on: 'bi-eye-fill',
+    off: 'bi-eye-slash'
+  },
+  base: {
+    header: 'bi-globe-asia-australia',
+    on: 'bi-eye-fill',
+    off: 'bi-eye-slash'
+  }
+}
+
 // ########################################
 const overlay_template = function(layer){
-  let isVisible = layer.visible ? "bi-eye-fill" : "bi-eye-slash";
+  let isVisible = layer.visible ? icons.overlays.on : icons.overlays.off;
   return `
     <div class="layer-1" onclick="set_base('${layer.uuid}')">
         <abbr title="toggle layer"><i id="base-${layer.uuid}" class="bi ${isVisible}"></i></abbr>
@@ -11,7 +41,7 @@ const overlay_template = function(layer){
 
 // ########################################
 const base_template = function(layer){
-  let isVisible = layer.visible ? "bi-eye-fill" : "bi-eye-slash";
+  let isVisible = layer.visible ? icons.base.on : icons.base.off
   return `
     <div class="layer-1" onclick="set_base('${layer.uuid}')">
         <abbr title="toggle layer"><i id="base-${layer.uuid}" class="bi ${isVisible}"></i></abbr>
@@ -460,13 +490,7 @@ async function loadJsonl() {
 // const json_file = 'dist/layers.jsonl';
 const json_file = 'src/data/layers.jsonl';
 
-// ToDo: separate this to a json config file...
-const conf = {
-  zoom: 9,
-  lat: -33.0,
-  long: 151.5833,
-  coordRounding: 4
-};
+
 
 let zState = {
   mouseLat: 0,

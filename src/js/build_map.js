@@ -1,6 +1,6 @@
 // ########################################
 const overlay_template = function(layer){
-  let isVisible = layer.visible ? "bi-eye-fill" : "bi-eye-slash";
+  let isVisible = layer.visible ? icons.overlays.on : icons.overlays.off;
   return `
     <div class="layer-1" onclick="set_base('${layer.uuid}')">
         <abbr title="toggle layer"><i id="base-${layer.uuid}" class="bi ${isVisible}"></i></abbr>
@@ -11,7 +11,7 @@ const overlay_template = function(layer){
 
 // ########################################
 const base_template = function(layer){
-  let isVisible = layer.visible ? "bi-eye-fill" : "bi-eye-slash";
+  let isVisible = layer.visible ? icons.base.on : icons.base.off
   return `
     <div class="layer-1" onclick="set_base('${layer.uuid}')">
         <abbr title="toggle layer"><i id="base-${layer.uuid}" class="bi ${isVisible}"></i></abbr>
